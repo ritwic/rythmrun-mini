@@ -4,13 +4,12 @@ import React from 'react'
 export default function login() {
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.v}>
-        <Text style={styles.title}>Rythm</Text>
-        <Text style={styles.title}>Run</Text>
+      <View style={styles.logo_container}>
+        <Image style={styles.logo} source={require('../assets/yl.png')} />
       </View>
       
-      <View style={{position:'absolute', width:'140%',top:'-30%'}}>
-        <Image style={{width:'100%',height: undefined,aspectRatio:1}} source={require('../assets/grad.png')}/>
+      <View style={{position:'absolute', width:'100%',top:'-10%', right:'4%'}}>
+        <Image style={{width:'100%',height: undefined,aspectRatio:1}} source={require('../assets/grads.png')}/>
       </View>
 
       <View style={{position:'absolute', width:'70%', bottom:'-10%',left:"-30%"}}>
@@ -26,11 +25,21 @@ const styles = StyleSheet.create({
     height: "100%",
     backgroundColor: "black",
   },
-  v:{
+  logo_container:{
     flex:1,
     zIndex:2,
-    padding:30,
-    alignItems:'flex-end'
+    position:'relative',
+    // borderStyle:'solid',
+    // borderColor:'red',
+    // borderWidth:2
+  },
+  logo:{
+    // borderStyle:'solid',
+    // borderColor:'green',
+    // borderWidth:2
+    position:'absolute',
+    right:'2%',
+    top:'-5%'
   },
   title:{
     color:'white',
