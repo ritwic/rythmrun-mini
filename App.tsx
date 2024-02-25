@@ -1,13 +1,13 @@
 import { View, Text, Button } from 'react-native'
 import React, { useState } from 'react'
-import Login from './src/screens/Login'
+import Pin from './src/screens/Pin'
 
 export default function App() {
   let [name,setName]=useState('Ritwik')
   let [age,setAge] =useState(28)
   return (
     <View>
-      <Login/>
+      <Pin pin_label='Enter pin'/>
     </View>
   )
 }
