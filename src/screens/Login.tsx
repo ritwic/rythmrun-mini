@@ -47,9 +47,6 @@ const styles = StyleSheet.create({
     width:'100%',
     flex:1,
     alignItems:'center',
-    borderColor:'white',
-    borderWidth:2,
-    borderStyle:'solid',
   },
 
 //LOGO------------------------------
